@@ -601,3 +601,6 @@ Epoch [199/200], Step [400/600], d_loss: 1.0604, g_loss: 1.5530, D(x): 0.66, D(G
 Epoch [199/200], Step [600/600], d_loss: 0.8846, g_loss: 1.4382, D(x): 0.65, D(G(z)): 0.24
 
 Process finished with exit code 0
+
+
+
