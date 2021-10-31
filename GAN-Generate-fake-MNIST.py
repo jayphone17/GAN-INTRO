@@ -4,6 +4,8 @@ import torchvision
 import torch.nn as nn
 from torchvision import transforms
 from torchvision.utils import save_image
+import matplotlib.image as mpimg
+import matplotlib.pyplot as plt
 
 # Device configuration
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
@@ -159,9 +161,6 @@ for epoch in range(num_epochs):
 # 保存模型
 torch.save(G.state_dict(), 'G.ckpt')
 torch.save(D.state_dict(), 'D.ckpt')
-
-import matplotlib.image as mpimg
-import matplotlib.pyplot as plt
 
 reconsPath = './samples/fake_images-200.png'
 Image = mpimg.imread(reconsPath)
